@@ -1,0 +1,15 @@
+# Created on 2022-04-12T23:10:56.321
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2022-04-12T23:10:56.322
+WARNING: Illegal reflective access by org.jboss.arquillian.test.spi.SecurityActions$2 (file:/C:/Users/Flexisaf/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.1.14.Final/arquillian-test-spi-1.1.14.Final.jar) to field java.lang.Throwable.cause
+
+# Created on 2022-04-12T23:10:56.323
+WARNING: Please consider reporting this to the maintainers of org.jboss.arquillian.test.spi.SecurityActions$2
+
+# Created on 2022-04-12T23:10:56.323
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2022-04-12T23:10:56.326
+WARNING: All illegal access operations will be denied in a future release
+

@@ -1,0 +1,9 @@
+com\kontrol\javaeedemo\grocery\Grocery.class
+com\kontrol\javaeedemo\exceptions\WebApplicationExceptionMapper.class
+com\kontrol\javaeedemo\grocery\GroceryService.class
+com\kontrol\javaeedemo\grocery\converters\UUIDConverter.class
+com\kontrol\javaeedemo\grocery\GroceryRepository.class
+com\kontrol\javaeedemo\JakartaEEApplication.class
+com\kontrol\javaeedemo\grocery\GroceryResource.class
+com\kontrol\javaeedemo\flyway\FlywayStarter.class
+com\kontrol\javaeedemo\exceptions\Error.class

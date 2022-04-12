@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: integration.GroceryRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 57.113 s <<< FAILURE! - in integration.GroceryRepositoryTest
+testCreate(integration.GroceryRepositoryTest)  Time elapsed: 1.742 s  <<< ERROR!
+javax.transaction.TransactionalException: Managed bean with Transactional annotation and TxType of REQUIRED encountered exception during commit javax.transaction.RollbackException: Transaction marked for rollback.
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: javax.transaction.RollbackException: Transaction marked for rollback.
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: javax.persistence.PersistenceException: 
+Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.9.payara-p1): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: java.lang.reflect.UndeclaredThrowableException
+Error Code: 0
+Call: INSERT INTO groceries (id, added_at, is_sold, name, price) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(com.kontrol.javaeedemo.grocery.Grocery@5d441b94)
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: org.jboss.arquillian.test.spi.ArquillianProxyException: 
+org.eclipse.persistence.exceptions.DatabaseException : 
+Internal Exception: java.sql.SQLException: java.lang.reflect.UndeclaredThrowableException
+Error Code: 0
+Call: INSERT INTO groceries (id, added_at, is_sold, name, price) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Query: InsertObjectQuery(com.kontrol.javaeedemo.grocery.Grocery@5d441b94) [Proxied because : Original exception caused: class java.lang.ClassNotFoundException: org.eclipse.persistence.exceptions.DatabaseException]
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: java.sql.SQLException: java.lang.reflect.UndeclaredThrowableException
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: org.jboss.arquillian.test.spi.ArquillianProxyException: java.lang.reflect.UndeclaredThrowableException : null [Proxied because : Original exception caused: class java.lang.ClassNotFoundException: org.h2.jdbc.JdbcSQLSyntaxErrorException]
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: org.jboss.arquillian.test.spi.ArquillianProxyException: java.lang.reflect.InvocationTargetException : null [Proxied because : Original exception caused: class java.lang.ClassNotFoundException: org.h2.jdbc.JdbcSQLSyntaxErrorException]
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+Caused by: org.jboss.arquillian.test.spi.ArquillianProxyException: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException : Table "GROCERIES" not found; SQL statement:
+INSERT INTO groceries (id, added_at, is_sold, name, price) VALUES (?, ?, ?, ?, ?) [42102-200] [Proxied because : Original exception caused: class java.lang.ClassNotFoundException: org.h2.jdbc.JdbcSQLSyntaxErrorException]
+	at integration.GroceryRepositoryTest.testCreate(GroceryRepositoryTest.java:38)
+
